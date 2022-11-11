@@ -2,6 +2,33 @@
 
 This is an example GraphQL API to receive a string that contain roman numerals and return the smallest prime roman numeral and the respective number.
 
+## EXAMPLE
+
+Mutation
+
+```
+mutation {
+  search(input: { text: "AXIBIV" })
+  {
+    number
+    value
+  }
+}
+```
+
+Return 
+
+```
+{
+  "data": {
+    "search": {
+      "number": "XI",
+      "value": 11
+    }
+  }
+}
+```
+
 ## HOW TO RUN
 
 To start this api just run in terminal inside of the src folder:
