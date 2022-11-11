@@ -1,0 +1,13 @@
+type Mutation {
+  "find the smallest prime roman numeral inside a word"
+  search(input: word!): Payload!
+}
+
+input word {
+  text: String!
+}
+
+type Payload {
+  number: String
+  value: Int
+}
